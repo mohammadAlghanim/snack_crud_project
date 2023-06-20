@@ -4,6 +4,8 @@
      <h1>snacks</h1>
     {% for snack in snacks%}
         <h3><a href="{% url 'snack_detail' snack.pk%}">{{snack.name}}</a></h3>
+        <button><a href="{% url 'snack_delete' snack.pk%}">Delete</a></button>
+        <button><a href="{% url 'snack_update' snack.pk%}">Update</a></button>
         <!-- <h1>{{snack.description}}</h1> -->
     {%endfor%}
 {% endblock content%}

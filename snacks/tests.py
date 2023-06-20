@@ -47,3 +47,5 @@ class SnackTests(TestCase):
         self.assertEqual(thing.name, "rake")
         self.assertEqual(thing.description, 'bla bla bla ..')
         self.assertEqual(thing.purchaser.username, "tester")
+
+    
