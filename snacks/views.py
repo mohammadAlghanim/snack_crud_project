@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import ListView,DetailView
+from django.views.generic import ListView,DetailView,CreateView
 from .models import Snacks
 # Create your views here.
 
@@ -11,3 +11,8 @@ class SnackPageView(ListView):
 class DetailPageView(DetailView):
     template_name='snack_detail.html'
     model = Snacks
+
+class CreateView(CreateView):
+    template_name='snack_create.html'
+    model=Snacks
+    fields = ['name','description','purchaser']

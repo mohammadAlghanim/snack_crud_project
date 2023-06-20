@@ -9,7 +9,11 @@
 
 <body>
     <header>
-        
+        <nav>
+            <a href="{% url 'snack_list' %}">snack_list</a>
+            <a href="{% url 'snack_create' %}">create</a>
+            
+        </nav>
     </header>
     <main>
        {% block content%}
